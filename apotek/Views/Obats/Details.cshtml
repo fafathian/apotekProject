@@ -1,0 +1,42 @@
+﻿@model apotek.Models.Obat
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Obat</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NamaObat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NamaObat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JenisObat)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JenisObat)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Harga)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Harga)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdObat">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
